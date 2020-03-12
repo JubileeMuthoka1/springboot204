@@ -14,6 +14,10 @@ public class Tvshow{
     private String name;
 
     @NotNull
+    @Size(min=3, max=10)
+    private String type;
+
+    @NotNull
     @Size(min=10, max=30)
     private String description;
 
@@ -39,5 +43,13 @@ public class Tvshow{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
